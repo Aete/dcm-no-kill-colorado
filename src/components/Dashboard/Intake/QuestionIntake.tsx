@@ -111,6 +111,14 @@ export default function QuestionIntake() {
             Across Colorado, both stray and relinquishment numbers appear to
             have increased since 2020.
           </Description>
+          <Description>
+            In a county-level analysis (sorted by total intake in 2024, in
+            descending order), larger counties such as Denver, Jefferson, and
+            Adams showed notably high values in total intake as well as in the
+            stray and relinquished categories. In particular, Denver experienced
+            a sharp increase in total, stray, and relinquished numbers starting
+            in 2022.
+          </Description>
           <Description style={{ fontSize: "13px", marginTop: "20px" }}>
             (analyzed only 38 counties with available data, and some facilities
             may have been omitted during the ZIP code conversion process. Blank

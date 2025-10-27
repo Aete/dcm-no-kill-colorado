@@ -77,12 +77,16 @@ export default function Overview() {
             to transform complex information into meaningful insights that
             support community-driven change.
           </Description>
-          <Description>
+          <Description style={{ marginBottom: "10px" }}>
             The goal of this project is to identify and track trends across
             multiple years of Colorado shelter statistics. By understanding the
             patterns in intake, outcomes, transfers, and community impacts, we
             can better encourage, define, and support the programs and services
             that will help every healthy and treatable pet find a safe outcome.
+          </Description>
+          <Description style={{ fontSize: "14px", fontStyle: "italic" }}>
+            Please note that charts may take a moment to load depending on your
+            internet connection.
           </Description>
         </HalfContainer>
         <HalfContainer>
@@ -92,3 +96,4 @@ export default function Overview() {
     </OverviewContainer>
   );
 }
+2;
