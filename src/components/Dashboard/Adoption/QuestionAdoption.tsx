@@ -17,7 +17,7 @@ import type {
 } from "../../../utils/dataProcessing/adoptionData";
 import MiniAdoptionChart from "./MiniAdoptionChart";
 
-import AdoptionLegend from "../../../utils/img/Adoption_legend.png";
+import AdoptionLegend from "../../../utils/img/adoption_legend.png";
 
 const Question = styled.div`
   display: flex;
