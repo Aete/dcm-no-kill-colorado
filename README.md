@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# No Kill Colorado - Annual Trends Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive data visualization dashboard tracking animal shelter statistics across Colorado, helping to identify trends and support evidence-based decisions for animal welfare programs.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository is for a data dashboard project that I participated in as a volunteer for one of Data Changemakers' projects.
 
-## React Compiler
+This project was carried out through a collaboration between [Data Changemaker](https://www.datachangemakers.org/) and [No Kill Colorado](https://www.nokillcolorado.org/). Volunteers contributed by processing and visualizing data, helping to transform complex information into meaningful insights that support community-driven change.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal of this project is to identify and track trends across multiple years of Colorado shelter statistics. By understanding the patterns in intake, outcomes, transfers, and community impacts, we can better encourage, define, and support the programs and services that will help every healthy and treatable pet find a safe outcome.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Interactive Dashboard**: Visualize animal shelter data with multiple chart types and filters
+- **Intake Analysis**: Track intake trends including stray, relinquished, and transfer data
+- **Outcome Tracking**: Monitor adoption, return-to-owner (RTO), and transfer-no-outcome (TNO) statistics
+- **County-Level Data**: Analyze data by specific counties or view statewide trends
+- **Responsive Design**: Optimized for desktop, tablet, and mobile viewing
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technology Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Styled Components
+- **Data Visualization**: D3.js
+- **Data Processing**: Custom utilities for CSV processing and analysis
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Aete/dcm-no-kill-colorado.git
+cd dcm-no-kill-colorado
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) to view the dashboard in your browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Data Sources
+
+The dashboard uses processed data from Colorado animal shelters, including:
+
+- Annual intake statistics by type (stray, relinquished, transfers)
+- Outcome data (adoptions, return-to-owner, transfers)
+- County-level facility mappings
+- Multi-year trend analysis (2015-2024)
+
+## Contributing
+
+This project welcomes contributions from volunteers interested in animal welfare data analysis and visualization. Please reach out to [Data Changemaker](https://www.datachangemakers.org/) or [No Kill Colorado](https://www.nokillcolorado.org/) for more information on how to get involved.
+
+## License
+
+This project is developed for community benefit in support of animal welfare initiatives in Colorado.
