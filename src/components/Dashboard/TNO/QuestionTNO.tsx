@@ -112,15 +112,6 @@ export default function QuestionTNO() {
             (euthanasia, died, or missing).
           </Description>
           <Description>
-            If transfers are outpacing local lifesaving, it may highlight the
-            need for stronger in-state safety nets before committing resources
-            to out-of-state animals.
-          </Description>
-          <Description>
-            If transfers and negative outcomes both rise together, it signals
-            capacity stress.
-          </Description>
-          <Description>
             Across Colorado, transfers from other states have been decreasing
             since 2020. However, negative outcomes rose up to 2023 and then
             decreased in 2024.
